@@ -74,12 +74,29 @@ insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
 insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
 	values (1000, "ZAPCAB", 1, 1200, 1 * 1200);
 
-select * from detalletickets;
-
+# Se agrega otra Venta en ticket
+insert into tickets(folio, fecha, total)
+	values (1001, "2021-09-02", 0);  
     
+insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
+	values (1001, "CHAMCA", 2, 900, 2 * 900);
+
+insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
+	values (1001, "CHAMDA", 3, 1000, 3 * 1000);
+    
+# oTRA tercera venta 1003
+# Se agrega otra Venta en ticket
+insert into tickets(folio, fecha, total)
+	values (1002, "2021-09-02", 0);  
+    
+insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
+	values (1002, "CHAMCA", 1, 900, 1 * 900);
+
+insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
+	values (1002, "CHAMDA", 2, 1000, 2 * 1000);
         
 select * from tickets;
-select * detalletickets;
+select * from detalletickets;
 
     
     

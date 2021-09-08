@@ -6,6 +6,7 @@ drop table categorias;
 drop table clientes;
 drop table colonias;
 
+
 create table colonias
 (
 	colonia integer primary key,
@@ -57,6 +58,7 @@ create table detalletickets
 	clave char(6), # references
     cantidad integer,
     precio_venta float,
+    importe float, # precio * cantidad
     
     constraint foreign key FKticket (folio)
 		references tickets (folio),
