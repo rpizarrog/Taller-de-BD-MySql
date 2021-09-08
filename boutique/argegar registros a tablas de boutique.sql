@@ -84,7 +84,7 @@ insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
 insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
 	values (1001, "CHAMDA", 3, 1000, 3 * 1000);
     
-# oTRA tercera venta 1003
+# oTRA tercera venta 1002
 # Se agrega otra Venta en ticket
 insert into tickets(folio, fecha, total)
 	values (1002, "2021-09-02", 0);  
