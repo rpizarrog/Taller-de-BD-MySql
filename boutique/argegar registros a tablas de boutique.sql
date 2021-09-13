@@ -84,7 +84,7 @@ insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
 insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
 	values (1001, "CHAMDA", 3, 1000, 3 * 1000);
     
-# oTRA tercera venta 1002
+# oTRA tercera venta 1003
 # Se agrega otra Venta en ticket
 insert into tickets(folio, fecha, total)
 	values (1002, "2021-09-02", 0);  
@@ -98,6 +98,19 @@ insert into detalletickets (folio, clave, cantidad, precio_venta, importe)
 select * from tickets;
 select * from detalletickets;
 
+    
+    
+# Agregando FACTURAS de tickets que existan y 
+# obviamente de clientes que también existan
+insert into facturas (no_factura, fecha, folio_ticket, rfc,
+				subtotal, iva,total)
+	values ("F1", "2021-09-08", 1000,"GOPA000403", 0, 0, 0);
+    
+insert into facturas (no_factura, fecha, folio_ticket, rfc,
+				subtotal, iva,total)
+	values ("F2", "2021-09-08", 1002,"PIGR691106", 0, 0, 0);
+
+select * from facturas;
     
     
 
